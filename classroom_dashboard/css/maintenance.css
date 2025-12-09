@@ -1,0 +1,20 @@
+.panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.panel button {
+  flex: 1;
+  min-width: 150px;
+  padding: 14px;
+  background: linear-gradient(135deg,#e1b12c,#fbc531);
+  border: none;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.status {
+  border-left: 6px solid orange;
+}

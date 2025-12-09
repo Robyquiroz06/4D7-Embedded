@@ -1,0 +1,12 @@
+th {
+  background: #192a56;
+  color: white;
+}
+
+button.pdf {
+  background: linear-gradient(135deg,#c23616,#e84118);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+}

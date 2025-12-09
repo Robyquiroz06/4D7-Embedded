@@ -1,0 +1,17 @@
+.sleep {
+  text-align: center;
+  padding-top: 100px;
+  color: #666;
+}
+
+.sleep h1 {
+  color: #2f3640;
+}
+
+.sleep p {
+  font-size: 1.1em;
+}
+
+body {
+  background: linear-gradient(180deg,#dcdde1,#f5f6fa);
+}

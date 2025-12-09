@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUTO MODE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/auto.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="auto.html">Classroom Monitor</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#" onclick="setMode('AUTO')">AUTO</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="setMode('MAINTENANCE')">MAINTENANCE</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="setMode('SLEEP')">SLEEP</a></li>
+        <li class="nav-item"><a class="nav-link" href="logs.html">LOGS</a></li>
+        <button class="btn btn-sm btn-outline-light ms-2" onclick="logout()">Logout</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main class="container mt-4">
+  <span class="mode-label">SYSTEM ACTIVE</span>
+  <h1>AUTO MODE</h1>
+
+  <div class="alert alert-success">
+    System running normally. Monitoring classroom environment.
+  </div>
+
+  <div class="cards">
+    <div class="card shadow">🌡 Temperature <span>-- °C</span></div>
+    <div class="card shadow">💧 Humidity <span>-- %</span></div>
+    <div class="card shadow">💡 Light <span>--</span></div>
+    <div class="card shadow">🔊 Sound <span>--</span></div>
+  </div>
+
+  <div class="box mt-4 shadow">
+    <span class="status-badge">Monitoring</span>
+    <h4>System Recommendation</h4>
+    <p>No abnormal conditions detected.</p>
+  </div>
+
+  <div class="graph-box mt-4">
+    Graph Placeholder (Sensor trends)
+  </div>
+</main>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
